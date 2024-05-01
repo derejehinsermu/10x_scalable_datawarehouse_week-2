@@ -1,0 +1,15 @@
+[2024-05-01T16:43:39.599+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/airflow/dags/load.py
+[2024-05-01T16:43:39.602+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow/dags/load.py for tasks to queue
+[2024-05-01T16:43:39.612+0000] {logging_mixin.py:188} INFO - [2024-05-01T16:43:39.611+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/airflow/dags/load.py
+[2024-05-01T16:43:40.353+0000] {logging_mixin.py:188} INFO - [2024-05-01T16:43:40.348+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/airflow/dags/load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow/dags/load.py", line 66, in <module>
+    create_table >> load_data
+                    ^^^^^^^^^
+NameError: name 'load_data' is not defined
+[2024-05-01T16:43:40.358+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow/dags/load.py
+[2024-05-01T16:43:40.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow/dags/load.py took 0.792 seconds
