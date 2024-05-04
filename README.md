@@ -1,4 +1,4 @@
-# Project Title: Traffic Data Analysis Pipeline
+# Traffic Data Analysis Pipeline
 
 ## Overview
 This project is designed to ingest, transform, and visualize traffic data collected from UAVs using a robust ELT pipeline.
