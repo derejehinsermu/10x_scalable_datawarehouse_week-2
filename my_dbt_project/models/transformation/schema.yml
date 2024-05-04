@@ -1,0 +1,18 @@
+# models/schema.yml
+version: 2
+
+models:
+  - name: my_transformations
+    description: "Aggregate metrics for vehicle speeds by type and track ID."
+    columns:
+      - name: track_id
+        description: "Identifier for the vehicle's track"
+      - name: vehicle_type
+        description: "Type of vehicle"
+      - name: average_speed
+        description: "Average speed of the vehicle"
+      - name: max_speed
+        description: "Maximum speed of the vehicle"
+      - name: min_speed
+        description: "Minimum speed of the vehicle"
+

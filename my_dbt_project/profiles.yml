@@ -1,0 +1,12 @@
+my_dbt_project:
+  outputs:
+    dev:
+      dbname: vehicle_tracking_data
+      host: localhost
+      pass: dere
+      port: 5432
+      schema: schema
+      threads: 3
+      type: postgres
+      user: postgres
+  target: dev

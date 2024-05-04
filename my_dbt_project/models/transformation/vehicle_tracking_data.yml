@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: vehicle_data  # Logical name for grouping
+   
+    schema: schema  # Specify the schema where your table resides
+    tables:
+      - name: vehicle_trajectories
+
